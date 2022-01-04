@@ -1,0 +1,11 @@
+[master]
+masternode ansible_host=62.84.114.245
+
+[node]
+workernode1 ansible_host=62.84.112.16
+workernode2 ansible_host=62.84.112.164
+
+[all:vars]
+ansible_user = ubuntu
+ansible_ssh_extra_args='-o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no'
+ansible_python_interpreter=/usr/bin/python3
